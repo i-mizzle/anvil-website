@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="5.33471in" height="2.45855in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 5299 2442"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil2 {fill:#0098DA}
+    .fil3 {fill:#201E1E}
+    .fil0 {fill:#606062;fill-rule:nonzero}
+    .fil1 {fill:#373435;fill-rule:nonzero}
+   ]]>
+  </style>
+    <mask id="id0">
+  <linearGradient id="id1" gradientUnits="userSpaceOnUse" x1="103.295" y1="1928.75" x2="161.823" y2="2223.8">
+   <stop offset="0" style="stop-opacity:1; stop-color:white"/>
+   <stop offset="0.290196" style="stop-opacity:0.501961; stop-color:white"/>
+   <stop offset="1" style="stop-opacity:0; stop-color:white"/>
+  </linearGradient>
+     <rect style="fill:url(#id1)" x="2" y="2022" width="555" height="424"/>
+    </mask>
+    <mask id="id2">
+  <linearGradient id="id3" gradientUnits="userSpaceOnUse" x1="1226.16" y1="1063.8" x2="370.05" y2="1693.85">
+   <stop offset="0" style="stop-opacity:1; stop-color:white"/>
+   <stop offset="1" style="stop-opacity:0; stop-color:white"/>
+  </linearGradient>
+     <rect style="fill:url(#id3)" x="-3" y="1599" width="1101" height="634"/>
+    </mask>
+    <mask id="id4">
+  <linearGradient id="id5" gradientUnits="userSpaceOnUse" x1="-143.595" y1="767.069" x2="730.365" y2="1504.85">
+   <stop offset="0" style="stop-opacity:1; stop-color:white"/>
+   <stop offset="0.0901961" style="stop-opacity:0.501961; stop-color:white"/>
+   <stop offset="1" style="stop-opacity:0; stop-color:white"/>
+  </linearGradient>
+     <rect style="fill:url(#id5)" x="1" y="1594" width="1100" height="211"/>
+    </mask>
+    <mask id="id6">
+  <linearGradient id="id7" gradientUnits="userSpaceOnUse" x1="1155.14" y1="-13.924" x2="605.476" y2="229.336">
+   <stop offset="0" style="stop-opacity:1; stop-color:white"/>
+   <stop offset="0.0901961" style="stop-opacity:0.501961; stop-color:white"/>
+   <stop offset="1" style="stop-opacity:0; stop-color:white"/>
+  </linearGradient>
+     <rect style="fill:url(#id7)" x="4" y="209" width="1100" height="211"/>
+    </mask>
+    <mask id="id8">
+  <linearGradient id="id9" gradientUnits="userSpaceOnUse" x1="1105.15" y1="783.221" x2="584.122" y2="1410.77">
+   <stop offset="0" style="stop-opacity:1; stop-color:white"/>
+   <stop offset="1" style="stop-opacity:0; stop-color:white"/>
+  </linearGradient>
+     <rect style="fill:url(#id9)" x="1" y="1170" width="1101" height="634"/>
+    </mask>
+    <mask id="id10">
+  <linearGradient id="id11" gradientUnits="userSpaceOnUse" x1="84.4578" y1="932.371" x2="347.577" y2="1345.04">
+   <stop offset="0" style="stop-opacity:1; stop-color:white"/>
+   <stop offset="1" style="stop-opacity:0; stop-color:white"/>
+  </linearGradient>
+     <rect style="fill:url(#id11)" x="2" y="1163" width="1100" height="211"/>
+    </mask>
+    <mask id="id12">
+  <linearGradient id="id13" gradientUnits="userSpaceOnUse" x1="1105.82" y1="353.662" x2="584.797" y2="981.207">
+   <stop offset="0" style="stop-opacity:1; stop-color:white"/>
+   <stop offset="1" style="stop-opacity:0; stop-color:white"/>
+  </linearGradient>
+     <rect style="fill:url(#id13)" x="2" y="740" width="1101" height="634"/>
+    </mask>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M1375 1932l0 -186 66 0c22,0 39,4 53,12 14,9 25,20 32,34 7,13 10,29 10,47 0,18 -3,34 -10,48 -7,14 -18,25 -32,33 -14,8 -31,12 -53,12l-66 0zm62 -152l-25 0 0 118 25 0c14,0 26,-2 35,-8 9,-5 16,-12 20,-21 4,-9 6,-19 6,-30 0,-11 -2,-21 -6,-30 -4,-9 -11,-16 -20,-21 -9,-6 -21,-8 -35,-8z"/>
+  <polygon id="1" class="fil0" points="1631,1932 1631,1746 1668,1746 1668,1932 "/>
+  <path id="2" class="fil0" d="M1860 1935c-14,0 -26,-2 -38,-7 -12,-5 -22,-12 -31,-21 -9,-9 -15,-19 -20,-31 -5,-11 -8,-24 -8,-37 0,-13 3,-25 8,-37 5,-12 11,-22 20,-31 9,-9 19,-16 31,-21 12,-5 24,-7 38,-7 16,0 29,2 40,7 11,5 21,13 28,22l-26 23c-5,-6 -11,-10 -18,-13 -7,-3 -15,-5 -24,-5 -12,0 -22,3 -31,9 -8,5 -15,13 -20,22 -5,10 -7,20 -7,31 0,12 2,22 7,31 5,10 12,17 20,23 9,5 19,8 31,8 15,0 27,-3 36,-10 9,-7 14,-18 16,-32l-61 0 0 -33 97 0c0,3 1,6 1,10 0,4 0,7 0,10 0,17 -3,33 -10,46 -8,13 -18,24 -31,32 -13,7 -29,11 -48,11z"/>
+  <polygon id="3" class="fil0" points="2044,1932 2044,1746 2081,1746 2081,1932 "/>
+  <polygon id="4" class="fil0" points="2227,1932 2227,1780 2174,1780 2174,1746 2317,1746 2317,1780 2264,1780 2264,1932 "/>
+  <path id="5" class="fil0" d="M2364 1932l76 -186 32 0 75 186 -40 0 -13 -36 -77 0 -13 36 -40 0zm85 -118l-20 50 53 0 -20 -50c-2,-7 -5,-14 -6,-21 -2,7 -4,14 -7,21z"/>
+  <polygon id="6" class="fil0" points="2631,1932 2631,1746 2668,1746 2668,1898 2737,1898 2737,1932 "/>
+  <polygon id="7" class="fil0" points="2874,1932 2874,1746 2911,1746 2911,1932 "/>
+  <path id="8" class="fil0" d="M3013 1932l0 -186 28 0 90 108c2,2 4,5 6,7 2,3 4,5 6,8 0,-4 -1,-9 -1,-14 0,-5 0,-11 0,-16l0 -93 34 0 0 186 -24 0 -94 -112c-2,-2 -4,-5 -6,-7 -2,-3 -4,-6 -6,-8 0,4 1,8 1,14 0,5 0,11 0,16l0 97 -34 0z"/>
+  <path id="9" class="fil0" d="M3278 1932l0 -186 28 0 90 108c2,2 4,5 6,7 2,3 4,5 6,8 0,-4 -1,-9 -1,-14 0,-5 0,-11 0,-16l0 -93 34 0 0 186 -24 0 -94 -112c-2,-2 -4,-5 -6,-7 -2,-3 -4,-6 -6,-8 0,4 1,8 1,14 0,5 0,11 0,16l0 97 -34 0z"/>
+  <path id="10" class="fil0" d="M3632 1935c-13,0 -26,-2 -38,-7 -12,-5 -22,-12 -31,-21 -8,-9 -15,-19 -20,-31 -5,-11 -7,-24 -7,-37 0,-13 2,-25 7,-37 5,-12 12,-22 20,-31 9,-9 19,-16 31,-21 12,-5 25,-7 38,-7 14,0 27,2 39,7 11,5 21,12 30,21 9,9 15,19 20,31 5,12 8,24 8,37 0,13 -3,26 -8,37 -5,12 -11,22 -20,31 -9,9 -19,16 -30,21 -12,5 -25,7 -39,7zm0 -34c12,0 23,-3 31,-9 9,-5 15,-13 20,-22 5,-9 7,-20 7,-31 0,-11 -2,-21 -7,-31 -5,-9 -11,-17 -20,-22 -8,-6 -19,-9 -31,-9 -12,0 -22,3 -31,9 -8,5 -15,13 -20,22 -5,10 -7,20 -7,31 0,11 2,22 7,31 5,9 12,17 20,22 9,6 19,9 31,9z"/>
+  <path id="11" class="fil0" d="M3868 1932l-74 -186 43 0 43 118c3,8 5,16 6,23 1,-3 2,-7 3,-11 1,-4 3,-8 4,-12l42 -118 42 0 -73 186 -36 0z"/>
+  <path id="12" class="fil0" d="M4014 1932l76 -186 32 0 75 186 -40 0 -12 -36 -78 0 -13 36 -40 0zm85 -118l-20 50 53 0 -20 -50c-2,-7 -4,-14 -6,-21 -2,7 -4,14 -7,21z"/>
+  <polygon id="13" class="fil0" points="4298,1932 4298,1780 4245,1780 4245,1746 4388,1746 4388,1780 4335,1780 4335,1932 "/>
+  <polygon id="14" class="fil0" points="4481,1932 4481,1746 4518,1746 4518,1932 "/>
+  <path id="15" class="fil0" d="M4709 1935c-13,0 -26,-2 -38,-7 -12,-5 -22,-12 -31,-21 -8,-9 -15,-19 -20,-31 -5,-11 -7,-24 -7,-37 0,-13 2,-25 7,-37 5,-12 12,-22 20,-31 9,-9 19,-16 31,-21 12,-5 25,-7 38,-7 14,0 27,2 38,7 12,5 22,12 31,21 9,9 15,19 20,31 5,12 7,24 7,37 0,13 -2,26 -7,37 -5,12 -11,22 -20,31 -9,9 -19,16 -31,21 -11,5 -24,7 -38,7zm0 -34c12,0 23,-3 31,-9 9,-5 15,-13 20,-22 5,-9 7,-20 7,-31 0,-11 -2,-21 -7,-31 -5,-9 -11,-17 -20,-22 -8,-6 -19,-9 -31,-9 -12,0 -22,3 -31,9 -9,5 -15,13 -20,22 -5,10 -7,20 -7,31 0,11 2,22 7,31 5,9 11,17 20,22 9,6 19,9 31,9z"/>
+  <path id="16" class="fil0" d="M4900 1932l0 -186 29 0 90 108c2,2 4,5 6,7 2,3 4,5 6,8 0,-4 -1,-9 -1,-14 0,-5 0,-11 0,-16l0 -93 34 0 0 186 -24 0 -94 -112c-2,-2 -4,-5 -6,-7 -2,-3 -4,-6 -6,-8 0,4 0,8 1,14 0,5 0,11 0,16l0 97 -35 0z"/>
+  <path id="17" class="fil0" d="M5226 1935c-15,0 -28,-3 -41,-9 -12,-7 -22,-17 -30,-31l32 -20c5,9 11,16 18,20 7,5 15,7 23,7 8,0 15,-2 20,-6 5,-4 8,-9 8,-15 0,-6 -2,-11 -6,-15 -4,-4 -9,-7 -16,-9 -6,-2 -13,-4 -21,-6 -14,-4 -25,-10 -34,-19 -8,-8 -13,-20 -13,-34 0,-11 3,-20 9,-29 5,-8 13,-14 22,-19 10,-5 22,-7 35,-7 14,0 26,3 36,9 10,6 18,15 25,26l-32 19c-4,-7 -9,-12 -14,-16 -4,-3 -10,-5 -17,-5 -8,0 -14,2 -19,6 -4,3 -7,8 -7,15 0,6 3,11 9,15 6,3 12,5 21,8 5,2 11,4 18,6 7,2 13,6 20,10 6,4 11,10 15,16 4,7 6,16 6,27 0,11 -2,21 -8,29 -5,9 -13,15 -23,20 -10,5 -22,7 -36,7z"/>
+  <path class="fil1" d="M1313 1540l416 -1019 177 0 415 1019 -222 0 -70 -193 -425 0 -70 193 -221 0zm467 -648l-109 279 291 0 -109 -279c-14,-38 -26,-77 -36,-116 -10,42 -22,80 -37,116z"/>
+  <path id="1" class="fil1" d="M2366 1540l0 -1019 154 0 497 590c11,13 23,27 34,41 11,14 22,29 33,43 -3,-21 -5,-47 -6,-76 -1,-30 -1,-60 -1,-90l0 -508 186 0 0 1019 -133 0 -515 -613c-12,-13 -23,-27 -34,-41 -12,-14 -22,-29 -33,-43 3,21 5,47 6,76 1,30 1,60 1,90l0 531 -189 0z"/>
+  <path id="2" class="fil1" d="M3717 1540l-406 -1019 236 0 233 648c15,43 28,86 36,128 5,-21 11,-43 16,-65 6,-21 13,-42 21,-63l233 -648 231 0 -403 1019 -197 0z"/>
+  <polygon id="3" class="fil1" points="4365,1540 4365,521 4569,521 4569,1540 "/>
+  <polygon id="4" class="fil1" points="4715,1540 4715,521 4919,521 4919,1357 5299,1357 5299,1540 "/>
+  <g id="_2446230710208">
+   <rect class="fil2" transform="matrix(0.00068582 -0.436665 0.660311 0.00103708 6.99645 414.889)" width="464" height="1655"/>
+   <polygon class="fil2" points="4,2227 5,2024 552,2239 552,2441 "/>
+   <polygon class="fil3" style="mask:url(#id0)" points="5,2228 5,2025 553,2240 552,2442 "/>
+   <rect class="fil2" transform="matrix(-0.00068582 0.436665 0.660716 -0.256415 4.50967 2023.6)" width="464" height="1655"/>
+   <polygon class="fil3" style="mask:url(#id2)" points="0,2027 0,2230 1094,1805 1094,1603 "/>
+   <rect class="fil2" transform="matrix(0.00068582 -0.436665 0.660311 0.00103708 4.86041 1800.28)" width="464" height="1655"/>
+   <polygon class="fil3" style="mask:url(#id4)" points="5,1800 5,1598 1098,1600 1098,1802 "/>
+   <polygon class="fil3" style="mask:url(#id6)" points="7,415 7,212 1100,214 1100,417 "/>
+   <rect class="fil2" transform="matrix(-0.00068582 0.436665 0.660716 -0.256415 5.17894 1597.47)" width="464" height="1655"/>
+   <polygon class="fil3" style="mask:url(#id8)" points="5,1597 5,1800 1099,1375 1099,1173 "/>
+   <rect class="fil2" transform="matrix(0.00068582 -0.436665 0.660311 0.00103708 5.53776 1369.01)" width="464" height="1655"/>
+   <polygon class="fil3" style="mask:url(#id10)" points="6,1369 6,1167 1099,1168 1099,1371 "/>
+   <rect class="fil2" transform="matrix(-0.00068582 0.436665 0.660716 -0.256415 5.8536 1167.91)" width="464" height="1655"/>
+   <polygon class="fil3" style="mask:url(#id12)" points="6,1168 6,1370 1099,946 1100,743 "/>
+   <rect class="fil2" transform="matrix(0.00068582 -0.436665 0.660311 0.00103708 6.57998 680.061)" width="464" height="1655"/>
+   <polygon class="fil2" points="554,0 1100,214 1100,417 553,202 "/>
+   <rect class="fil2" transform="matrix(0.00068582 -0.436665 -0.660311 -0.00103708 1099.33 945.832)" width="464" height="1655"/>
+  </g>
+ </g>
+</svg>
