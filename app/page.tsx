@@ -25,7 +25,7 @@ const productCards = [
     cta: "View Case Study →",
   },
   {
-    name: "School ERP",
+    name: "Kavio",
     tag: "Complete School Management Platform",
     description:
       "An all-in-one platform for schools to manage academics, finances, staff, communication, and student records from a single system.",

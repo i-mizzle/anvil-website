@@ -23,7 +23,7 @@ const productLinks: ProductLink[] = [
     summary: "Agricultural traceability from farm to market with compliance support.",
   },
   {
-    name: "School ERP",
+    name: "Kavio",
     href: "#products",
     summary: "Unified school management for academics, finance, and communication.",
   },
