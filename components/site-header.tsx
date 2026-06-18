@@ -101,7 +101,14 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
         <a href="/#top" className="font-display text-lg font-bold tracking-tight text-anvil-navy" onClick={handleHeaderLinkClick}>
-          <Image src="/img/logo.svg" alt="Anvil Digital Innovations Logo" width={150} height={50} />
+          <Image
+            src="/img/logo.svg"
+            alt="Anvil Digital Innovations Logo"
+            width={150}
+            height={50}
+            className="h-auto transition-all duration-300"
+            style={{ width: isScrolled ? "75px" : "150px" }}
+          />
         </a>
 
         <nav className="hidden items-center gap-7 md:flex" aria-label="Main">
