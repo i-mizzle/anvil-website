@@ -1,4 +1,6 @@
 import ArrowNarrowIcon from "@/components/icons/ArrowNarrowIcon";
+import { CalendlyTrigger } from "@/components/calendly-trigger";
+import { RevealOnScroll } from "@/components/reveal-on-scroll";
 import { SiteLayout } from "@/components/site-layout";
 
 const productCards = [
@@ -8,7 +10,8 @@ const productCards = [
     description:
       "A complete point-of-sale and inventory platform for retailers, restaurants, pharmacies, supermarkets, and growing businesses.",
     highlights: ["POS", "Inventory", "Multi-store management", "Reporting", "API", "Headless Architecture", "Reviews Management"],
-    cta: "Learn More →",
+    cta: "View Case Study →",
+    href: "/case-studies/elevana",
   },
   {
     name: "AgroTrace",
@@ -23,10 +26,11 @@ const productCards = [
       "Compliance reporting",
     ],
     cta: "View Case Study →",
+    href: "/case-studies/agrotrace",
   },
   {
-    name: "Kavio",
-    tag: "Complete School Management Platform",
+    name: "Acava",
+    tag: "Complete School Management ERP",
     description:
       "An all-in-one platform for schools to manage academics, finances, staff, communication, and student records from a single system.",
     highlights: [
@@ -37,7 +41,8 @@ const productCards = [
       "Parent Portal",
       "Reporting",
     ],
-    cta: "View Case Study →",
+    cta: "Book a demo →",
+    href: "#contact",
   },
 ];
 
@@ -144,7 +149,7 @@ export default function Home() {
       <section className="relative overflow-hidden border-b border-anvil-border bg-linear-to-b from-anvil-soft to-white">
         <div className="pointer-events-none absolute -left-20 top-20 h-56 w-56 rounded-full bg-anvil-blue/15 blur-3xl" />
         <div className="pointer-events-none absolute right-0 top-0 h-80 w-80 rounded-full bg-sky-300/20 blur-3xl" />
-        <div className="mx-auto w-full max-w-6xl px-6 py-40 lg:px-8 lg:py-40">
+        <RevealOnScroll className="mx-auto w-full max-w-6xl px-6 py-40 lg:px-8 lg:py-40">
           <div className="mx-auto max-w-4xl text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-anvil-blue">Forged Digital Products</p>
             <h1 className="mt-5 text-4xl font-bold leading-tight tracking-tight text-anvil-navy sm:text-5xl lg:text-6xl">
@@ -172,11 +177,11 @@ export default function Home() {
 
             <p className="mt-8 text-sm text-anvil-slate">Forged by Anvil. Built for the real world.</p>
           </div>
-        </div>
+        </RevealOnScroll>
       </section>
 
       <section id="about" className="border-b border-anvil-border bg-white">
-        <div className="mx-auto w-full max-w-6xl px-6 py-20 lg:px-8">
+        <RevealOnScroll className="mx-auto w-full max-w-6xl px-6 py-20 lg:px-8">
           <SectionHeading
             eyebrow="About Anvil"
             title="We forge software that businesses can depend on."
@@ -248,11 +253,11 @@ export default function Home() {
                 </div>
               </div>
           </div>
-        </div>
+        </RevealOnScroll>
       </section>
 
       <section id="products" className="border-b border-anvil-border bg-white">
-        <div className="mx-auto w-full max-w-6xl px-6 py-20 lg:px-8">
+        <RevealOnScroll className="mx-auto w-full max-w-6xl px-6 py-20 lg:px-8">
           <SectionHeading
             eyebrow="Products Forged by Anvil"
             title="Industry-focused software built on shared engineering principles."
@@ -277,109 +282,122 @@ export default function Home() {
           </div>
 
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
-            {productCards.map((product) => (
-              <article
-                key={product.name}
-                className="flex h-full flex-col rounded-2xl transition hover:-translate-y-1"
-              >
-                <p className="text-sm font-semibold uppercase tracking-[0.15em] text-anvil-blue">{product.name}</p>
-                <h3 className="mt-3 font-display text-2xl font-bold text-anvil-navy">{product.tag}</h3>
-                <div className="h-inherit xl:h-42.5">
-                  <p className="mt-4 text-sm leading-7 text-anvil-slate">{product.description}</p>
-                </div>
-                <ul className="mt-6 flex flex-wrap gap-2">
-                  {product.highlights.map((highlight) => (
-                    <li
-                      key={highlight}
-                      className="rounded-full border border-anvil-border bg-anvil-soft px-3 py-1 text-xs font-semibold text-anvil-slate"
-                    >
-                      {highlight}
-                    </li>
-                  ))}
-                </ul>
-                <a href="#contact" className="mt-8 text-sm font-semibold text-anvil-blue">
-                  {product.cta}
-                </a>
-              </article>
+            {productCards.map((product, productIndex) => (
+              <RevealOnScroll key={product.name} delayMs={productIndex * 80}>
+                <article className="flex h-full flex-col rounded-2xl transition hover:-translate-y-1">
+                  <p className="text-sm font-semibold uppercase tracking-[0.15em] text-anvil-blue">{product.name}</p>
+                  <h3 className="mt-3 font-display text-2xl font-bold text-anvil-navy">{product.tag}</h3>
+                  <div className="h-inherit xl:h-42.5">
+                    <p className="mt-4 text-sm leading-7 text-anvil-slate">{product.description}</p>
+                  </div>
+                  <ul className="mt-6 flex flex-wrap gap-2">
+                    {product.highlights.map((highlight) => (
+                      <li
+                        key={highlight}
+                        className="rounded-full border border-anvil-border bg-anvil-soft px-3 py-1 text-xs font-semibold text-anvil-slate"
+                      >
+                        {highlight}
+                      </li>
+                    ))}
+                  </ul>
+                  {product.name === "Acava" ? (
+                    <CalendlyTrigger className="mt-8 text-sm font-semibold text-anvil-blue">
+                      {product.cta}
+                    </CalendlyTrigger>
+                  ) : (
+                    <a href={product.href} className="mt-8 text-sm font-semibold text-anvil-blue">
+                      {product.cta}
+                    </a>
+                  )}
+                </article>
+              </RevealOnScroll>
             ))}
           </div>
-        </div>
+        </RevealOnScroll>
       </section>
 
       <section id="services" className="border-b border-anvil-border bg-anvil-soft">
-        <div className="mx-auto w-full max-w-6xl px-6 py-20 lg:px-8">
+        <RevealOnScroll className="mx-auto w-full max-w-6xl px-6 py-20 lg:px-8">
           <SectionHeading
             eyebrow="Beyond Products"
             title="We also build custom systems where long-term value can be created."
           />
           <div className="mt-10 grid gap-4 md:grid-cols-2">
-            {services.map((service) => (
-              <article key={service.title} className="rounded-lg border-anvil-border bg-white p-6">
-                <h3 className="font-display text-xl font-bold text-anvil-navy">{service.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-anvil-slate">{service.detail}</p>
-              </article>
+            {services.map((service, serviceIndex) => (
+              <RevealOnScroll key={service.title} delayMs={serviceIndex * 70}>
+                <article className="rounded-lg border-anvil-border bg-white p-6">
+                  <h3 className="font-display text-xl font-bold text-anvil-navy">{service.title}</h3>
+                  <p className="mt-3 text-sm leading-7 text-anvil-slate">{service.detail}</p>
+                </article>
+              </RevealOnScroll>
             ))}
           </div>
-        </div>
+        </RevealOnScroll>
       </section>
 
       <section className="border-b border-anvil-border bg-white">
-        <div className="mx-auto w-full max-w-6xl px-6 py-20 lg:px-8">
+        <RevealOnScroll className="mx-auto w-full max-w-6xl px-6 py-20 lg:px-8">
           <SectionHeading eyebrow="Why Anvil" title="Why Organizations Choose Anvil" />
           <div className="mt-10 grid gap-5 md:grid-cols-2">
-            {reasons.map((reason) => (
-              <article key={reason.title} className="rounded-2xl border border-anvil-border p-6">
-                <h3 className="font-display text-xl font-bold text-anvil-navy">{reason.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-anvil-slate">{reason.detail}</p>
-              </article>
+            {reasons.map((reason, reasonIndex) => (
+              <RevealOnScroll key={reason.title} delayMs={reasonIndex * 70}>
+                <article className="rounded-2xl border border-anvil-border p-6">
+                  <h3 className="font-display text-xl font-bold text-anvil-navy">{reason.title}</h3>
+                  <p className="mt-3 text-sm leading-7 text-anvil-slate">{reason.detail}</p>
+                </article>
+              </RevealOnScroll>
             ))}
           </div>
-        </div>
+        </RevealOnScroll>
       </section>
 
       <section id="process" className="border-b border-anvil-border bg-anvil-soft">
-        <div className="mx-auto w-full max-w-6xl px-6 py-20 lg:px-8">
+        <RevealOnScroll className="mx-auto w-full max-w-6xl px-6 py-20 lg:px-8">
           <SectionHeading eyebrow="Process" title="How We Work" />
           <ol className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-5">
             {process.map((item, itemIndex) => (
-              <li key={itemIndex} className="rounded-lg bg-white/80 p-4 relative">
-                <p className="font-display text-2xl font-bold text-anvil-blue">{item.step}</p>
-                {itemIndex < process.length - 1 &&<ArrowNarrowIcon className="w-6 h-6 absolute text-anvil-slate/50 -right-3 top-5" />}
-                <h3 className="mt-3 font-display text-lg font-bold text-anvil-navy">{item.title}</h3>
-                <p className="mt-2 text-sm leading-7 text-anvil-slate">{item.detail}</p>
+              <li key={itemIndex}>
+                <RevealOnScroll className="relative rounded-lg bg-white/80 p-4" delayMs={itemIndex * 60}>
+                  <p className="font-display text-2xl font-bold text-anvil-blue">{item.step}</p>
+                  {itemIndex < process.length - 1 &&<ArrowNarrowIcon className="w-6 h-6 absolute text-anvil-slate/50 -right-3 top-5" />}
+                  <h3 className="mt-3 font-display text-lg font-bold text-anvil-navy">{item.title}</h3>
+                  <p className="mt-2 text-sm leading-7 text-anvil-slate">{item.detail}</p>
+                </RevealOnScroll>
               </li>
             ))}
           </ol>
-        </div>
+        </RevealOnScroll>
       </section>
 
       <section className="border-b border-anvil-border bg-white">
-        <div className="mx-auto w-full max-w-6xl px-6 py-20 lg:px-8">
+        <RevealOnScroll className="mx-auto w-full max-w-6xl px-6 py-20 lg:px-8">
           <SectionHeading eyebrow="Built Through Real Business Experience" title="Proof through practical outcomes." />
           <div className="mt-8 rounded-3xl border border-anvil-border bg-anvil-soft p-8">
             <p className="max-w-4xl text-lg leading-8 text-anvil-slate">
               Every Anvil product began by solving practical operational challenges - from inventory management and retail operations to agricultural traceability and enterprise workflows. We believe software should prove its value in everyday use before it&apos;s called successful.
             </p>
           </div>
-        </div>
+        </RevealOnScroll>
       </section>
 
       <section id="faq" className="border-b border-anvil-border bg-white">
-        <div className="mx-auto w-full max-w-6xl px-6 py-20 lg:px-8">
+        <RevealOnScroll className="mx-auto w-full max-w-6xl px-6 py-20 lg:px-8">
           <SectionHeading eyebrow="FAQ" title="Frequently Asked Questions" />
           <div className="mt-10 space-y-4">
-            {faq.map((item) => (
-              <details key={item.question} className="rounded-2xl border border-anvil-border bg-anvil-soft px-5 py-4">
-                <summary className="cursor-pointer list-none text-base font-semibold text-anvil-navy">{item.question}</summary>
-                <p className="mt-3 text-sm leading-7 text-anvil-slate">{item.answer}</p>
-              </details>
+            {faq.map((item, faqIndex) => (
+              <RevealOnScroll key={item.question} delayMs={faqIndex * 60}>
+                <details className="rounded-2xl border border-anvil-border bg-anvil-soft px-5 py-4">
+                  <summary className="cursor-pointer list-none text-base font-semibold text-anvil-navy">{item.question}</summary>
+                  <p className="mt-3 text-sm leading-7 text-anvil-slate">{item.answer}</p>
+                </details>
+              </RevealOnScroll>
             ))}
           </div>
-        </div>
+        </RevealOnScroll>
       </section>
 
       <section className="bg-linear-to-r from-anvil-navy to-anvil-blue text-white">
-        <div className="mx-auto w-full max-w-6xl px-6 py-20 lg:px-8">
+        <RevealOnScroll className="mx-auto w-full max-w-6xl px-6 py-20 lg:px-8">
           <div className="rounded-xl border-white/20 bg-white/5 p-8 sm:p-10">
             {/* <p className="text-sm font-semibold uppercase tracking-[0.15em] text-blue-100">Final CTA</p> */}
             <h2 className="mt-4 max-w-2xl font-display text-3xl font-bold leading-tight sm:text-4xl">
@@ -389,12 +407,11 @@ export default function Home() {
               Whether you&apos;re looking for a proven product or a custom solution, we&apos;d love to learn about your business.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <a
-                href="#contact"
+              <CalendlyTrigger
                 className="rounded-full font-display border border-white bg-white px-6 py-3 text-sm font-semibold text-anvil-navy transition hover:bg-transparent hover:text-white"
               >
                 Schedule a Conversation
-              </a>
+              </CalendlyTrigger>
               <a
                 href="#products"
                 className="rounded-full font-display border border-white/60 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
@@ -403,7 +420,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-        </div>
+        </RevealOnScroll>
       </section>
     </SiteLayout>
   );

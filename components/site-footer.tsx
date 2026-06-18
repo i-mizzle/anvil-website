@@ -1,7 +1,7 @@
 const footerSections = [
   {
     title: "Products",
-    links: ["Elevana", "AgroTrace", "Kavio"],
+    links: ["Elevana", "AgroTrace", "Acava"],
   },
   {
     title: "Company",
@@ -9,7 +9,9 @@ const footerSections = [
   },
   {
     title: "Resources",
-    links: ["Blog", "Case Studies", "Privacy Policy"],
+    links: [
+      // "Blog", 
+      "Case Studies", "Privacy Policy"],
   },
 ];
 

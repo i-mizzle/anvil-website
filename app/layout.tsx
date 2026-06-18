@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit, Space_Grotesk } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -25,7 +26,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${outfit.variable} ${spaceGrotesk.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col" suppressHydrationWarning>{children}</body>
+      <head>
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+      </head>
+      <body className="min-h-full flex flex-col" suppressHydrationWarning>
+        {children}
+        <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="afterInteractive" />
+      </body>
     </html>
   );
 }
