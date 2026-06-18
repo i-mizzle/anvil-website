@@ -4,7 +4,7 @@ const footerSections = [
     links: [
       { label: "Elevana", href: "/case-studies/elevana" },
       { label: "AgroTrace", href: "/case-studies/agrotrace" },
-      { label: "Acava", href: "/#products" },
+      { label: "Acava", href: "/case-studies/acava" },
     ],
   },
   {

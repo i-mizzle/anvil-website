@@ -1,7 +1,27 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import { CalendlyTrigger } from "@/components/calendly-trigger";
 import { RevealOnScroll } from "@/components/reveal-on-scroll";
 import { SiteLayout } from "@/components/site-layout";
+import { createProductMetadata, productSchema } from "@/lib/metadata";
+
+export const metadata: Metadata = createProductMetadata(
+  "Elevana",
+  "Elevana is a modern POS and business management platform for retail stores, restaurants, pharmacies, and supermarkets. Unified sales system, inventory intelligence, and multi-location control with headless architecture.",
+  "/case-studies/elevana",
+  [
+    "POS system",
+    "point of sale",
+    "inventory management",
+    "retail management",
+    "restaurant POS",
+    "pharmacy management",
+    "business management platform",
+    "multi-location",
+    "API",
+    "headless architecture",
+  ]
+);
 
 const capabilities = [
   {

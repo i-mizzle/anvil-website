@@ -1,4 +1,20 @@
+import { Metadata } from "next";
 import { SiteLayout } from "@/components/site-layout";
+import { createPageMetadata } from "@/lib/metadata";
+
+export const metadata: Metadata = createPageMetadata(
+  "Privacy Policy | Anvil Digital Innovations",
+  "Privacy policy for Anvil Digital Innovations. Learn how we collect, use, and protect your data when using our software products including Elevana, AgroTrace, and Acava.",
+  "/privacy-policy",
+  [
+    "privacy policy",
+    "data privacy",
+    "terms of service",
+    "GDPR",
+    "data protection",
+    "user data",
+  ]
+);
 
 const sections = [
   {

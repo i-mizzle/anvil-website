@@ -1,7 +1,28 @@
+import { Metadata } from "next";
 import ArrowNarrowIcon from "@/components/icons/ArrowNarrowIcon";
 import { CalendlyTrigger } from "@/components/calendly-trigger";
 import { RevealOnScroll } from "@/components/reveal-on-scroll";
 import { SiteLayout } from "@/components/site-layout";
+import { createPageMetadata, breadcrumbSchema } from "@/lib/metadata";
+
+export const metadata: Metadata = createPageMetadata(
+  "Enterprise Software Development | Anvil Digital Innovations",
+  "Custom software products and digital transformation for enterprise operations. We build POS systems, agricultural traceability, school management ERPs, and custom platforms.",
+  "/",
+  [
+    "enterprise software",
+    "custom software development",
+    "POS systems",
+    "agriculture software",
+    "school management",
+    "digital transformation",
+    "business software",
+    "API integration",
+    "elevana",
+    "agrotrace",
+    "acava",
+  ]
+);
 
 const productCards = [
   {
@@ -41,8 +62,8 @@ const productCards = [
       "Parent Portal",
       "Reporting",
     ],
-    cta: "Book a demo →",
-    href: "#contact",
+    cta: "View Case Study →",
+    href: "/case-studies/acava",
   },
 ];
 
@@ -300,15 +321,11 @@ export default function Home() {
                       </li>
                     ))}
                   </ul>
-                  {product.name === "Acava" ? (
-                    <CalendlyTrigger className="mt-8 text-sm font-semibold text-anvil-blue">
-                      {product.cta}
-                    </CalendlyTrigger>
-                  ) : (
+                  
                     <a href={product.href} className="mt-8 text-sm font-semibold text-anvil-blue">
                       {product.cta}
                     </a>
-                  )}
+                  
                 </article>
               </RevealOnScroll>
             ))}

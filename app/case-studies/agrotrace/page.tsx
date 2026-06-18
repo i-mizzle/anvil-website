@@ -1,7 +1,26 @@
+import { Metadata } from "next";
 import { CalendlyTrigger } from "@/components/calendly-trigger";
 import { RevealOnScroll } from "@/components/reveal-on-scroll";
 import { SiteLayout } from "@/components/site-layout";
 import AgrotraceLogo from "@/components/products/AgrotraceLogo";
+import { createProductMetadata, productSchema } from "@/lib/metadata";
+
+export const metadata: Metadata = createProductMetadata(
+  "AgroTrace",
+  "AgroTrace is an agricultural traceability platform providing end-to-end supply chain visibility. Digital infrastructure for farmers, exporters, inspectors, and regulators with batch management, certifications, and compliance reporting.",
+  "/case-studies/agrotrace",
+  [
+    "agricultural traceability",
+    "supply chain traceability",
+    "farm to market",
+    "batch management",
+    "agricultural compliance",
+    "export readiness",
+    "certification management",
+    "agriculture software",
+    "supply chain transparency",
+  ]
+);
 
 const problemPoints = [
   "Traceability is manual or paper-based",
