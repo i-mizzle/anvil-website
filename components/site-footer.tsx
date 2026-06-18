@@ -1,17 +1,25 @@
 const footerSections = [
   {
     title: "Products",
-    links: ["Elevana", "AgroTrace", "Acava"],
+    links: [
+      { label: "Elevana", href: "/case-studies/elevana" },
+      { label: "AgroTrace", href: "/case-studies/agrotrace" },
+      { label: "Acava", href: "/#products" },
+    ],
   },
   {
     title: "Company",
-    links: ["About", "Services", "Contact"],
+    links: [
+      { label: "About", href: "/#about" },
+      { label: "Services", href: "/#services" },
+      { label: "Contact", href: "/#contact" },
+    ],
   },
   {
     title: "Resources",
     links: [
-      // "Blog", 
-      "Case Studies", "Privacy Policy"],
+      { label: "Privacy Policy", href: "/privacy-policy" },
+    ],
   },
 ];
 
@@ -34,8 +42,10 @@ export function SiteFooter() {
               <h3 className="font-display text-base font-bold">{section.title}</h3>
               <ul className="mt-4 space-y-2">
                 {section.links.map((link) => (
-                  <li key={link} className="text-sm text-blue-100/90">
-                    {link}
+                  <li key={link.label} className="text-sm text-blue-100/90">
+                    <a href={link.href} className="transition hover:text-white">
+                      {link.label}
+                    </a>
                   </li>
                 ))}
               </ul>
