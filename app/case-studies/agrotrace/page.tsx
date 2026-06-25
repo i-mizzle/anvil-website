@@ -3,6 +3,7 @@ import { CalendlyTrigger } from "@/components/calendly-trigger";
 import { RevealOnScroll } from "@/components/reveal-on-scroll";
 import { SiteLayout } from "@/components/site-layout";
 import AgrotraceLogo from "@/components/products/AgrotraceLogo";
+import { AgrotraceScreenshotRail } from "@/components/products/agrotrace-screenshot-rail";
 import { createProductMetadata, productSchema } from "@/lib/metadata";
 
 export const metadata: Metadata = createProductMetadata(
@@ -118,12 +119,24 @@ export default function AgrotraceCaseStudyPage() {
               </div>
             </div>
 
-            <div className="mt-12 rounded-lg border border-anvil-border bg-white p-8 shadow-[0_12px_40px_-20px_rgba(7,26,61,0.45)] sm:p-10">
+            <div className="mt-12 rounded-lg border border-anvil-border bg-white p-8 sm:p-10">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-anvil-blue">Development Focus</p>
               <p className="mt-4 max-w-4xl text-lg leading-8 text-anvil-slate">
                 AgroTraceNG is being designed to create structured, verifiable traceability from farm origin to export readiness. The platform is evolving with supply-chain stakeholders so the workflow reflects real field conditions, regulatory realities, and trade requirements.
               </p>
             </div>
+          </div>
+        </RevealOnScroll>
+      </section>
+
+      <section className="border-b border-anvil-border bg-anvil-soft">
+        <RevealOnScroll className="mx-auto w-full max-w-6xl px-6 py-20 lg:px-8">
+          <SectionHeading
+            eyebrow="Product Screens"
+            title="Explore AgroTrace workflows across the product interface."
+          />
+          <div className="mt-8">
+            <AgrotraceScreenshotRail />
           </div>
         </RevealOnScroll>
       </section>
@@ -215,6 +228,8 @@ export default function AgrotraceCaseStudyPage() {
           </div>
         </RevealOnScroll>
       </section>
+
+
 
       <section className="border-b border-anvil-border bg-anvil-soft">
         <RevealOnScroll className="mx-auto w-full max-w-6xl px-6 py-20 lg:px-8">
